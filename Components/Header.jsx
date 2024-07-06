@@ -1,15 +1,12 @@
-
 import { useTheme } from "../hooks/useTheme";
 
 const Header = ({ theme }) => {
   const [isDark, setIsDark] = useTheme();
 
-
-
   return (
     <header className={`header ${isDark ? "dark" : ""}`}>
       <div className="header-content">
-        <h2 className="title">Where in the worlds?</h2>
+        <h2 className="title">Where in the world?</h2>
         <p
           className="theme-changer"
           onClick={() => {
